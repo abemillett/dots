@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/fish
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
@@ -6,9 +6,9 @@
 
 ########## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim zshrc oh-my-zsh"    # list of files/folders to symlink in homedir
+set dir ~/dots                          # dots directory
+set olddir ~/dots_old                   # old dots backup directory
+set -l files .config/nvim .tmux.conf .vimrc  # things to symlink
 
 ##########
 
@@ -23,9 +23,13 @@ cd $dir
 echo "...done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
-for file in $files; do
+for file in $files
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/.$file ~/dotfiles_old/
+    mv ~/$file $olddir
     echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/.$file
-done
+    ln -s $dir/$file ~/$file
+end
+
+# get the git submodules (nvim and/or tmux plugins)
+git submodule init
+git submodule add
