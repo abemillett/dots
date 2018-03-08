@@ -4,15 +4,9 @@
 [submodule ".config/nvim/bundle/nerdcommenter"]
 	path = .config/nvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule ".config/nvim/bundle/ranger"]
-	path = .config/nvim/bundle/ranger
-	url = https://github.com/francoiscabrol/ranger.vim.git
 [submodule ".config/nvim/bundle/vim-airline"]
 	path = .config/nvim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
 [submodule ".config/nvim/bundle/vim-airline-themes"]
 	path = .config/nvim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule ".config/nvim/bundle/bclose.vim"]
-	path = .config/nvim/bundle/bclose.vim
-	url = https://github.com/rbgrouleff/bclose.vim.git
