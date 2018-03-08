@@ -1,3 +1,15 @@
 [submodule ".config/nvim/bundle/ale"]
 	path = .config/nvim/bundle/ale
 	url = https://github.com/w0rp/ale.git
+[submodule ".config/nvim/bundle/nerdcommenter"]
+	path = .config/nvim/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule ".config/nvim/bundle/ranger"]
+	path = .config/nvim/bundle/ranger
+	url = https://github.com/francoiscabrol/ranger.vim.git
+[submodule ".config/nvim/bundle/vim-airline"]
+	path = .config/nvim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".config/nvim/bundle/vim-airline-themes"]
+	path = .config/nvim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
