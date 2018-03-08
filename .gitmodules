@@ -1,0 +1,3 @@
+[submodule ".config/nvim/bundle/ale"]
+	path = .config/nvim/bundle/ale
+	url = https://github.com/w0rp/ale.git
